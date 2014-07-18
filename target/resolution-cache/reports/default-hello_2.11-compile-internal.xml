@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="hello_2.11"
+		revision="0.0.1"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20140718223418"/>
+	<dependencies>
+		<module organisation="org.utgenome.thirdparty" name="picard">
+			<revision name="1.102.0" status="release" pubdate="20131105102820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://utgenome.org/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3395" time="0" location="/Users/yukke/.ivy2/cache/org.utgenome.thirdparty/picard/ivy-1.102.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/utgenome/thirdparty/picard/1.102.0/picard-1.102.0.pom"/>
+				<caller organisation="default" name="hello_2.11" conf="optional, compile, provided, compile-internal" rev="1.102.0" rev-constraint-default="1.102.0" rev-constraint-dynamic="1.102.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="picard" type="jar" ext="jar" status="no" details="" size="1358437" time="0" location="/Users/yukke/.ivy2/cache/org.utgenome.thirdparty/picard/jars/picard-1.102.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/utgenome/thirdparty/picard/1.102.0/picard-1.102.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-apache-bcel">
+			<revision name="1.8.4" status="release" pubdate="20120522150150" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="7">
+				<metadata-artifact status="no" details="" size="2678" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant-apache-bcel/ivy-1.8.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/ant/ant-apache-bcel/1.8.4/ant-apache-bcel-1.8.4.pom"/>
+				<caller organisation="org.utgenome.thirdparty" name="picard" conf="default, compile, runtime, master" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="1.102.0"/>
+				<artifacts>
+					<artifact name="ant-apache-bcel" type="jar" ext="jar" status="no" details="" size="14548" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant-apache-bcel/jars/ant-apache-bcel-1.8.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/ant/ant-apache-bcel/1.8.4/ant-apache-bcel-1.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bcel" name="bcel">
+			<revision name="5.1" status="release" pubdate="20101020230405" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="8">
+				<metadata-artifact status="no" details="" size="2327" time="0" location="/Users/yukke/.ivy2/cache/bcel/bcel/ivy-5.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/bcel/bcel/5.1/bcel-5.1.pom"/>
+				<caller organisation="org.apache.ant" name="ant-apache-bcel" conf="compile, runtime" rev="5.1" rev-constraint-default="5.1" rev-constraint-dynamic="5.1" callerrev="1.8.4"/>
+				<artifacts>
+					<artifact name="bcel" type="jar" ext="jar" status="no" details="" size="515920" time="0" location="/Users/yukke/.ivy2/cache/bcel/bcel/jars/bcel-5.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/bcel/bcel/5.1/bcel-5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="regexp" name="regexp">
+			<revision name="1.2" status="release" pubdate="20051109072332" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="9">
+				<metadata-artifact status="no" details="" size="2177" time="0" location="/Users/yukke/.ivy2/cache/regexp/regexp/ivy-1.2.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/regexp/regexp/1.2/regexp-1.2.pom"/>
+				<caller organisation="bcel" name="bcel" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="5.1"/>
+				<artifacts>
+					<artifact name="regexp" type="jar" ext="jar" status="no" details="" size="29871" time="0" location="/Users/yukke/.ivy2/cache/regexp/regexp/jars/regexp-1.2.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/regexp/regexp/1.2/regexp-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-jexl">
+			<revision name="2.1.1" status="release" pubdate="20111219235813" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/jexl/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="5">
+				<metadata-artifact status="no" details="" size="7772" time="0" location="/Users/yukke/.ivy2/cache/org.apache.commons/commons-jexl/ivy-2.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.pom"/>
+				<caller organisation="org.utgenome.thirdparty" name="picard" conf="default, compile, runtime, master" rev="2.1.1" rev-constraint-default="2.1.1" rev-constraint-dynamic="2.1.1" callerrev="1.102.0"/>
+				<artifacts>
+					<artifact name="commons-jexl" type="jar" ext="jar" status="no" details="" size="267634" time="0" location="/Users/yukke/.ivy2/cache/org.apache.commons/commons-jexl/jars/commons-jexl-2.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071127052410" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/logging" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="6">
+				<metadata-artifact status="no" details="" size="3941" time="0" location="/Users/yukke/.ivy2/cache/commons-logging/commons-logging/ivy-1.1.1.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="org.utgenome.thirdparty" name="picard" conf="default, compile, runtime, master" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="1.102.0"/>
+				<caller organisation="org.apache.commons" name="commons-jexl" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="2.1.1"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60686" time="0" location="/Users/yukke/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.0" status="release" pubdate="20131017110248" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/xerial/snappy-java/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3844" time="0" location="/Users/yukke/.ivy2/cache/org.xerial.snappy/snappy-java/ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.0/snappy-java-1.1.0.pom"/>
+				<caller organisation="org.utgenome.thirdparty" name="picard" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.102.0"/>
+				<artifacts>
+					<artifact name="snappy-java" type="bundle" ext="jar" status="no" details="" size="410710" time="0" location="/Users/yukke/.ivy2/cache/org.xerial.snappy/snappy-java/bundles/snappy-java-1.1.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.0/snappy-java-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.8.4" status="release" pubdate="20120522150129" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="2">
+				<metadata-artifact status="no" details="" size="2740" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant/ivy-1.8.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/ant/ant/1.8.4/ant-1.8.4.pom"/>
+				<caller organisation="org.utgenome.thirdparty" name="picard" conf="default, compile, runtime, master" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="1.102.0"/>
+				<caller organisation="org.apache.ant" name="ant-apache-bcel" conf="compile, runtime" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="1.8.4"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="no" details="" size="1941731" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant/jars/ant-1.8.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/ant/ant/1.8.4/ant-1.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.8.4" status="release" pubdate="20120522150350" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="3">
+				<metadata-artifact status="no" details="" size="2423" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant-launcher/ivy-1.8.4.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.8.4/ant-launcher-1.8.4.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="compile, runtime" rev="1.8.4" rev-constraint-default="1.8.4" rev-constraint-dynamic="1.8.4" callerrev="1.8.4"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="no" details="" size="18429" time="0" location="/Users/yukke/.ivy2/cache/org.apache.ant/ant-launcher/jars/ant-launcher-1.8.4.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.8.4/ant-launcher-1.8.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.0" status="release" pubdate="20140416181332" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.0/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/yukke/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.0/scala-library-2.11.0.pom"/>
+				<caller organisation="default" name="hello_2.11" conf="optional, compile, provided, compile-internal" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="0.0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5577112" time="0" location="/Users/yukke/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.0.jar">
+						<origin-location is-local="false" location="http://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.0/scala-library-2.11.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
