@@ -4,8 +4,8 @@ import net.sf.samtools.SAMRecord
 import net.sf.samtools.SAMRecordIterator
 import net.sf.samtools.SAMFileReader.ValidationStringency
 
-
 object BamReader {
+
   def averageBaseQual(base: Array[Byte]): Int = {
     var sum = 0
     for (x <- base) {
@@ -48,11 +48,11 @@ object BamReader {
         all =  mapQuality :: all
 
         //println(rec.getReferencePositionAtReadPosition(1))
-        println(f"$refName%s, $alignStart%d, $alignEnd%d")
+        //println(f"$refName%s, $alignStart%d, $alignEnd%d")
       }
     }
 
-    println(s"Average mapping quality: ${averageMapQual(all)}" )
+    println(s"Average mapping quality: ${averageMapQual(all)}")
 
     iter.close()
     inputSam.close()
